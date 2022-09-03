@@ -1,4 +1,4 @@
-![TorSh Logo](https://raw.githubusercontent.com/pisoj/torsh/master/logo.png)
+![TorSh Logo](https://raw.githubusercontent.com/trhacknon/torsh/master/logo.png)
 
 ## About
 
@@ -17,7 +17,7 @@ TorSh is a tool that simplifies the creation of a reverse shell. It operates ove
 ## Installation
 
 ```
-git clone https://github.com/pisoj/torsh.git
+git clone https://github.com/trhacknon/torsh.git
 cd torsh
 chmod +x ./install.sh
 sudo ./install.sh
