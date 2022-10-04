@@ -32,7 +32,7 @@ torsh listen -p 5000
 
 #### Connect
 ```
-torsh listen -p 5000
+torsh connect <address> -p 5000
 ```
 
 
