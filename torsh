@@ -1,7 +1,7 @@
 #! /bin/sh
 
 # DEFAULT
-port=9999
+port=4444
 tor_proxy_port=19959
 reconnect=false
 
@@ -71,7 +71,7 @@ fi
 trap cleanup INT
 
 # Check for updates
-if [ $(/usr/lib/torsh/curl -s https://raw.githubusercontent.com/pisoj/torsh/master/version.txt) -gt $VERSION ]; then echo "${YELLOW}New version avaible! Run ${LYELLOW}torsh update${YELLOW} to install it.${NOCOLOR}"; fi &
+if [ $(/usr/lib/torsh/curl -s https://raw.githubusercontent.com/trhacknon/torsh/master/version.txt) -gt $VERSION ]; then echo "${YELLOW}New version avaible! Run ${LYELLOW}torsh update${YELLOW} to install it.${NOCOLOR}"; fi &
 cfu_pid=$!
 
 # MAIN
@@ -132,7 +132,7 @@ elif [ "$mode" = "update" ]; then
 	if [ "$USER" != "root" ]; then echo "${LRED}This operation requires root privilege!${NOCOLOR}"; exit; fi
 
 	# Download
-	/usr/lib/torsh/git clone https://github.com/pisoj/torsh.git /tmp/torsh/
+	/usr/lib/torsh/git clone https://github.com/trhacknon/torsh.git /tmp/torsh/
 	
 	# Remove old stuff
 	rm -r /usr/lib/torsh/
